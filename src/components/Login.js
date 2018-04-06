@@ -28,8 +28,9 @@ export default class Login extends Component {
     });
   }
 
-  render() { 
-    return (
+  render() {
+    console.log("render()"); 
+    return (      
       <div className="login-box">
         <h1 className="header-logo">Instalura</h1>
         <span>{this.state.mensagem}</span>
