@@ -9,7 +9,7 @@ export default class Login extends Component {
 
   enviaForm(event) {
     event.preventDefault();
-    fetch("http://localhost:8080/api/public/login", {
+    fetch("http://instalura-api.herokuapp.com/api/public/login", {
       method: "POST",
       body: JSON.stringify({login: this.login.value, senha: this.senha.value}),
       headers: new Headers({"Content-Type": "application/json"})
